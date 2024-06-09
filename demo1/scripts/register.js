@@ -6,7 +6,7 @@ $(document).ready( () => {
         console.log($("#profilePicture").prop('files')[0]);
 
         if ($("#username").val() == "" || $("#password").val() == "" || !$("#profilePicture").prop('files')[0]){
-            console.log("some info is missing..");
+            console.log("Missing user data");
         }
         else{
             console.log("all is filled");
