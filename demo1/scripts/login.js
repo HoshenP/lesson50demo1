@@ -5,6 +5,7 @@ $(document).ready( () => {
     $("#loginBtn").click(()=> {
 
         if ($("#loginUsername").val() == "" || $("#loginPassword").val() == ""){
+            alert("Some data is missing..");
             console.log("Missing user data");
         }
         else{

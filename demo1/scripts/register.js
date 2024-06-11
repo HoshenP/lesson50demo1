@@ -6,6 +6,7 @@ $(document).ready( () => {
         console.log($("#profilePicture").prop('files')[0]);
 
         if ($("#username").val() == "" || $("#password").val() == "" || $("#email").val() == "" || !$("#profilePicture").prop('files')[0]){
+            alert("Some data is missing..");
             console.log("Missing user data");
         }
         else{

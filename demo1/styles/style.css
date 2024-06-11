@@ -123,7 +123,7 @@ label:hover{
 
 .hintBtn:hover{
     color: #19a68c;
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
     text-decoration: underline;
 }
