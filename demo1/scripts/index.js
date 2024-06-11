@@ -10,4 +10,9 @@ $(document).ready( () => {
     $("#usernameDisplay").html(`${loggedUser.username}`);
     $("#emailDisplay").html(`${loggedUser.email}`);
 
+    $("#disconnectBtn").click( () => {
+        localStorage.removeItem("currentLoggedUser");
+        window.location.href = "login.html";
+    });
+
 });

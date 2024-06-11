@@ -23,7 +23,9 @@ $(document).ready( () => {
         }
     });
 
-        
+    $("#ownAccountBtn").click( () => {
+        window.location.href = "register.html";
+    });
 
 
 });

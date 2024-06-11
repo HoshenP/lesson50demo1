@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="../styles/style.css">
 
 </head>
 <body>
-    <h1>register</h1>
-    <input type="text" id="username" placeholder="Username">
-    <input type="text" id="password" placeholder="Password">
-    <input type="text" id="email" placeholder="Email">
-    <input type="file" id="profilePicture" accept="image/png, image/jpg">
-    <button id="registerBtn">Register</button>
+    
+    <div class="card">
+        <div class="content">
+            <h1 class="title">Register</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="password" placeholder="Password">
+            <input type="text" id="email" placeholder="Email">
+            <label for="profilePicture"><i class="fa-solid fa-upload"></i> Upload image</label>
+            <input type="file" id="profilePicture" accept="image/png, image/jpg">
+            <span class="hint">Already own an account?<button id="ownAccountBtn" class="hintBtn">Click here</button>to <strong>login</strong></span>
+            <button id="registerBtn" class="main-button">Register</button>
+
+        </div>
+    </div>
+
 
 
 
@@ -21,6 +30,7 @@
 
 
 <!-- CDN -->
+<script src="https://kit.fontawesome.com/17b8655560.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
     crossorigin="anonymous"></script>

@@ -42,35 +42,18 @@ $(document).ready( () => {
             };
 
             fileReader.readAsDataURL($('#profilePicture').prop('files')[0]);
+            window.location.href = "login.html";
 
             // get image from localStorage and display test
-            document.getElementById("displayImage").style.backgroundImage = `url(${JSON.parse(localStorage.getItem("myUsers"))[0].profilePicture})`;
-
-
-            
-
-
-
-
-
+            // document.getElementById("displayImage").style.backgroundImage = `url(${JSON.parse(localStorage.getItem("myUsers"))[0].profilePicture})`;
 
         }
     });
-
-        // how to use file reader :)
-        // $('#profilePicture').on('change', function () {
-        //     console.log("change detected");
-
-        //     let fileReader = new FileReader();
-        //     fileReader.onload = function () {
-        //       let data = fileReader.result;  // data <-- in this var you have the file data in Base64 format
-        //       document.getElementById("displayImage").style.backgroundImage = `url(${data})`;
-        //     };
-        //     fileReader.readAsDataURL($('#profilePicture').prop('files')[0]);
-
-        //     console.log("changes should be made..");
-        // });
         
-
+    $("#ownAccountBtn").click( () => {
+        window.location.href = "login.html";
+    });
+    
+    
 
 });

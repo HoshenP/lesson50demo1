@@ -20,6 +20,7 @@ body{
     margin-top: 60px;
     width: 132px;
     height: 132px;
+    background-size: contain;
 }
 
 h1{
@@ -31,7 +32,7 @@ h3{
     font-size: 16px;
 }
 
-button{
+.main-button{
     outline: none;
     background-color: #19a68c;
     margin-top: 60px;
@@ -41,11 +42,89 @@ button{
     color: white;
     font-size: 16px;
     border-radius: 30px;
+    font-family: monospace;
 }
 
-button:hover{
+.main-button:hover{
     color: #19a68c;
     background-color: white;
     transition: all 300ms linear;
     cursor: pointer;
+    font-weight: bold;
+
 }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 15px;
+}
+
+input{
+    font-size: 1rem;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 8px 8px 8px 8px;
+    background-color: rgb(240, 240, 240);
+    width: 250px;
+    border: 0;
+    border-radius: 30px;
+    font-family: monospace;
+
+}
+
+.title{
+    margin-top: 32px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    outline: none;
+    font-family: monospace;
+    background-color: #19a68c;
+    margin-top: 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    padding:12px 24px;
+    /* width: 250px; */
+
+
+}
+
+label:hover{
+    color: #19a68c;
+    background-color: white;
+    transition: all 300ms linear;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.hint{
+    color: white;
+    margin-top: 12px;
+}
+
+.hintBtn{
+    display: inline-block;
+    color: white;
+    background-color: #1d2630;
+    border: none;
+    font-family: monospace;
+}
+
+.hintBtn:hover{
+    color: #19a68c;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
