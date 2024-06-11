@@ -1,8 +1,51 @@
-#displayImage{
-    width: 375px;
-    height: 211px;
-    border: 1px solid black;
-    background-position: center;
-    background-size: cover;
+body{
+    background-color: #e2e1e0;
+    text-align: center;
+    font-family: monospace;
+}
 
+.card{
+    background-color: #1d2630;
+    border-radius: 10px;
+    display: inline-block;
+    height: 470px;
+    width: 375px;
+    margin-top: 60px;
+    box-shadow: 0 12px 13px rgba(0, 0, 0, 0.16);
+}
+
+#displayImage{
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 60px;
+    width: 132px;
+    height: 132px;
+}
+
+h1{
+    color: white;
+}
+
+h3{
+    color: #7c8097;
+    font-size: 16px;
+}
+
+button{
+    outline: none;
+    background-color: #19a68c;
+    margin-top: 60px;
+    border: none;
+    height: 40px;
+    width: 35%;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+button:hover{
+    color: #19a68c;
+    background-color: white;
+    transition: all 300ms linear;
+    cursor: pointer;
 }

@@ -11,7 +11,7 @@ $(document).ready( () => {
             if (JSON.parse(localStorage.getItem("myUsers"))) {
                 let myUsers = JSON.parse(localStorage.getItem("myUsers"));
                 for (let x in myUsers) {
-                    if (myUsers[x].username == $("#loginUsername").val() && myUsers[x].password == $("#loginPassword").val()) {
+                    if (myUsers[x].email == $("#loginEmail").val() && myUsers[x].password == $("#loginPassword").val()) {
                         localStorage.setItem("currentLoggedUser", JSON.stringify(myUsers[x]));
                         window.location.href = "index.html";
                     }

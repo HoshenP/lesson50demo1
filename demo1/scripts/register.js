@@ -5,7 +5,7 @@ $(document).ready( () => {
     $("#registerBtn").click(()=> {
         console.log($("#profilePicture").prop('files')[0]);
 
-        if ($("#username").val() == "" || $("#password").val() == "" || !$("#profilePicture").prop('files')[0]){
+        if ($("#username").val() == "" || $("#password").val() == "" || $("#email").val() == "" || !$("#profilePicture").prop('files')[0]){
             console.log("Missing user data");
         }
         else{
@@ -21,6 +21,7 @@ $(document).ready( () => {
                     let newUser = new User(
                         $("#username").val(),
                         $("#password").val(),
+                        $("#email").val(),
                         image);
         
                     tempUsers.push(newUser);
@@ -31,6 +32,7 @@ $(document).ready( () => {
                     let newUser = new User(
                         $("#username").val(),
                         $("#password").val(),
+                        $("#email").val(),
                         image);
         
                     tempUsers.push(newUser);
